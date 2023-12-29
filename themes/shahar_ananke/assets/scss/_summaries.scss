@@ -1,0 +1,18 @@
+.summaries-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+
+.summary {
+  background-color: var(--summary-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+
+  h1 { text-align: center; }
+}
+
+.summary-content { text-align: justify; }

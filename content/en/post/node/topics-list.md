@@ -1,0 +1,53 @@
+---
+title: "Topics List"
+date: 2023-11-26T16:53:34+02:00
+description: "Node Topics List"
+---
+
+- what is Node? - running environment for js code
+- port
+- http protocol
+  - request and response structure
+  - route
+  - http methods - GET, POST, DELETE, PATCH, PUT
+  - status codes
+  - query string
+  - headers
+    - Content-Type: application/json
+- http clients
+  - browser
+  - curl
+  - postman/insomnia
+  - vscode extension called "rest client"
+- REST API
+- cors
+- CommonJS
+- builtin modules
+  - path
+  - fs - File System
+- npm
+  - package.json
+    - scripts caluse
+    - dependencies
+- nodemon
+- express
+  - handler
+  - router
+  - middlewares
+    - static routing
+    - body parsers - json, urlencoding
+- dotenv
+- mongoose
+  - scheme
+  - model
+- Authentication
+  - hash function
+  - salt
+  - bcrypt
+- Authorization
+  - jsonwebtoken
+- validation
+  - [express-validator](https://express-validator.github.io/docs/)
+- unit testing
+  - jest
+  - supertest

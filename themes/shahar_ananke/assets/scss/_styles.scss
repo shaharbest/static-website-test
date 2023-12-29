@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Garamond');
+// @import url('https://fonts.googleapis.com/css?family=Georgia');
+
+:root {
+  --content-width: 46rem;
+  --horizontal-padding: calc((100vw - var(--content-width)) / 2);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: var(--body-bgc);
+  color: var(--body-fgc);
+}
+
+main { background-color: var(--second-bgc); }
+h1 { color: var(--second-biggest-heading-color); }
+h2 { color: var(--second-biggest-heading-color); }
+a { color: var(--link-color); }
+
+h1 { font-size: 2em; }
+
+h1.site-title {
+  font-size: xxx-large;
+  text-align: center;
+}
+
+h2.site-description {
+  font-size: xx-large;
+  text-align: center;
+}
+
+header, main, footer { padding: 1rem; }
+
+header, main, footer, nav {
+  @media (min-width: 60rem) {
+      padding-inline: var(--horizontal-padding);
+  }
+}

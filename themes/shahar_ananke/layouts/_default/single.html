@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  {{ with .CurrentSection.Title }}
+    {{ . | upper }}
+  {{ end }}
+
+  <div class="post-page">
+    <article>
+      {{- partial "post-article.html" . -}}
+    </article>
+
+    <aside>
+      {{- partial "post-aside.html" . -}}
+    </aside>
+  </div>
+
+{{ end }}

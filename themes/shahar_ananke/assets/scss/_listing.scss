@@ -1,0 +1,14 @@
+#search-post {
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.post-item {
+  color: var(--post-item-color);
+}

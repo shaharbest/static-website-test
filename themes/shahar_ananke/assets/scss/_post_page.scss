@@ -1,0 +1,28 @@
+.post-page {
+  article {
+    .post-title {
+      text-align: center;
+      font-size: 3em;
+      padding-block: .5em;
+    }
+
+    .post-meta { display: flex; justify-content: flex-end; }
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    a { text-decoration: underline; }
+
+    .tags-bar { display: flex; flex-direction: column; }
+
+    .related-list, .tags-list {
+      list-style-type: none;
+      display: flex;
+      gap: .25em .5em;
+      flex-wrap: wrap;
+    }
+  }
+}

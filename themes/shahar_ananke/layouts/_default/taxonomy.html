@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+  <p>
+    {{ i18n "taxonomyPageList" . }}
+  </p>
+
+  <ul id="posts">
+    {{ range .Pages }}
+      {{ partial "page-entry.html" . }}
+    {{ end }}
+  </ul>
+
+{{ end }}

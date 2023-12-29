@@ -1,0 +1,52 @@
+title = "Danielle's Blog"
+baseURL = "https://lively-field-07c1be80f.4.azurestaticapps.net"
+languageCode = "en-us"
+theme = "shahar_ananke"
+
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 4
+enableRobotsTXT = true
+
+[languages]
+  [languages.en]
+    title = "Danielle's Blog"
+    weight = 1
+    contentDir = "content/en"
+  [languages.he]
+    title = "הבלוג של שחר"
+    weight = 2
+    contentDir = "content/he"
+    languageDirection = 'rtl'
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  email = "bestshahar9@gmail.com"
+  mainSections = ["post"]
+  mainSection = "post"
+  # favicon = "/images/chad.ico"
+  # site_logo = "/images/chad.ico"
+  description = "web development demos, manuals and cheat sheets"
+
+[params.author]
+   name = "Shahar Best"
+   homepage = "https://www.shaharbest.com/"
+
+[[params.ananke_socials]]
+name = "github"
+label = "Github"
+url = "https://github.com/shaharbest/"
+
+[[params.ananke_socials]]
+name = "youtube"
+label = "Youtube"
+url = "https://www.youtube.com/channel/UC-wm5IwhZ15KbDv68SmyjCw"
+
+[[params.ananke_socials]]
+name = "linkedin"
+label = "Linkedin"
+url = "https://www.linkedin.com/in/shahar-best-656b34a5/"

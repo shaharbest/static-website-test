@@ -1,0 +1,38 @@
+      {{- if .Params.toc -}}
+      <div>
+        <p>{{ i18n "whatsInThis" . }}</p>
+        {{ .TableOfContents }}
+      </div>
+      {{- end -}}
+
+      {{ with .GetTerms "tags" }}
+      <div class="tags-bar">
+        <p>Tags:</p>
+        <ul class="tags-list">
+          {{ range . }}
+           <li>
+             <a href="{{ .RelPermalink }}">
+               {{- .LinkTitle -}}
+             </a>
+           </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+      {{ $related := .Site.RegularPages.Related . | first 15 }}
+
+      {{ with $related }}
+      <div>
+        <p>{{ i18n "related" }}:</p>
+        <ul class="related-list">
+          {{ range . }}
+          <li>
+            <a href="{{ .RelPermalink }}">
+              {{- .Title -}}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}

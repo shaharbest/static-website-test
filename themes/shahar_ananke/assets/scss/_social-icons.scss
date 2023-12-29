@@ -1,0 +1,26 @@
+a.ananke-social-link {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--social-color);
+  fill: currentColor;
+
+  .icon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &:hover { color: var(--social-hover-color); }
+}
+
+.new-window {
+  opacity: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.icon svg {
+  width: 2em;
+  height: 2em;
+}
+
+.link-transition:hover .new-window { opacity: 1; }

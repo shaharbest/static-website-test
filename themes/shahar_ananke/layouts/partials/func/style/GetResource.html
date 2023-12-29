@@ -1,0 +1,7 @@
+{{ $resource := dict }}
+
+{{ with resources.Get . }}
+  {{ $resource = . }}
+{{ end }}
+
+{{ return $resource }}

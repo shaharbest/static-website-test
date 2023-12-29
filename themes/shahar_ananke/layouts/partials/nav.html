@@ -1,0 +1,23 @@
+<nav role="navigation">
+  <label class="hamburger-menu">
+      <input type="checkbox" />
+  </label>
+
+  <aside class="sidebar">
+    <a class="nav-logo" href="{{ .Site.Home.RelPermalink }}">
+      {{- with .Site.Params.site_logo -}}
+        <img src="{{ relURL . }}" alt="{{ $.Site.Title }}" />
+      {{- else -}}
+        {{- .Site.Title -}}
+      {{ end }}
+    </a>
+
+    {{- if .Site.Menus.main -}}
+      <ul class="nav-items">
+        {{- partial "i18nlist.html" . -}}
+        {{- partial "main-menu-items.html" . -}}
+        {{- partialCached "social-follow.html" . -}}
+      </ul>
+    {{- end -}}
+  </aside>
+</nav>

@@ -1,0 +1,24 @@
+{{ define "header" }}
+  {{ partial "site-header.html" .}}
+{{ end }}
+
+{{ define "main" }}
+
+  {{- if .Content -}}
+    <section>
+      {{ .Content }}
+    </section>
+  {{- end -}}
+
+  {{- $mainSectionName := site.Params.mainSection | default "post" -}}
+  {{- $mainSection := .Site.GetPage $mainSectionName -}}
+
+  <ul class="posts">
+    {{- range $mainSection.Sections }}
+      <li class="post-item">
+        <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
+      </li>
+    {{- end }}
+  </ul>
+
+{{ end }}

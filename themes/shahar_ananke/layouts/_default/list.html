@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+  {{ partial "search-post-form.html" .}}
+
+  <ul class="posts">
+    {{ range .Pages }}
+      {{ partial "page-entry.html" . }}
+    {{ end }}
+  </ul>
+
+{{ end }}

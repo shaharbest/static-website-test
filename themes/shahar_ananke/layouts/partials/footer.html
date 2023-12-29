@@ -1,0 +1,12 @@
+<footer role="contentinfo">
+  <a class="copy-rights" href="{{ .Site.Home.Permalink }}" >
+    &copy;
+    {{ with .Site.Copyright | default .Site.Title }}
+      {{ . | safeHTML }}
+      {{ now.Format "2006" }}
+    {{ end }}
+  </a>
+  <ul>
+    {{ partial "social-follow.html" . }}
+  </ul>
+</footer>

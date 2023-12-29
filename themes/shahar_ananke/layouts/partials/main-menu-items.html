@@ -1,0 +1,11 @@
+  	{{- $mainSectionName := site.Params.mainSection | default "post" -}}
+  	{{- $mainSection := .Site.GetPage $mainSectionName -}}
+  	{{- $mainSectionLink := printf "/%s/" $mainSectionName -}}
+
+        {{- range where .Site.Menus.main "Page.RelPermalink" "!=" $mainSectionLink -}}
+        <li>
+          <a href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+            {{- .Name -}}
+          </a>
+        </li>
+        {{- end -}}

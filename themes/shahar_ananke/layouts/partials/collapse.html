@@ -1,0 +1,9 @@
+<details>
+	<summary>
+		{{ .Summary | default "Click to expand/collapse" }}
+	</summary>
+
+	<div class="collapsible-content">
+		{{ .Inner | markdownify }}
+	</div>
+</details>

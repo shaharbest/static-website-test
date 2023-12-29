@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+
+  li {
+    display: inline-block;
+    font-size: .875rem;
+
+    a {
+      display: block;
+      padding: 1rem;
+      background-color: white;
+      color: #333;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+
+    &.disabled { display: none; }
+
+    &.active a {
+      &, &:link, &:active, &:visited {
+        background-color: hsl(0, 0%, 80%);
+      }
+    }
+  }
+}
+
+#TableOfContents ul li {}

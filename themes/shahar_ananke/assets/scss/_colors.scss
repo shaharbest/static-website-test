@@ -1,0 +1,31 @@
+:root {
+    --fg-color: hsl(0, 0%, 100%);
+    --bg-color: hsl(0, 0%, 9%);
+    --second-bgc: hsl(0, 0%, 11%);
+
+    --biggest-heading-color: var(--fg-color);
+    --second-biggest-heading-color: var(--fg-color);
+
+    // --biggest-heading-color: #D2691E;
+    // --second-biggest-heading-color: #F4A460;
+
+    --summary-bg-color: hsl(0, 0%, 11%);
+    --post-item-color: hsl(0, 0%, 70%);
+    --nav-dark-color: hsl(0, 0%, 20%);
+    --nav-light-color: hsl(0, 0%, 100%);
+    --table-different-row-bgc: hsl(0, 0%, 7%);
+    --table-header-bgc: hsl(0, 0%, 20%);
+    --inline-code-bgc: hsl(0, 0%, 70%);
+    --inline-code-color: black;
+    --social-color: hsl(0, 0%, 73%);
+
+    --social-hover-color: #6b7280;
+
+    --link-color: var(--fg-color);
+    --table-header-color: var(--fg-color);
+    --table-border-color: var(--fg-color);
+
+    --body-bgc: var(--bg-color);
+    --body-fgc: var(--fg-color);
+    --main-bg-color: var(--second-bgc);
+}

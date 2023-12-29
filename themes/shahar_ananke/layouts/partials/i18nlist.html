@@ -1,0 +1,9 @@
+{{- if .IsTranslated -}}
+    {{- range .Translations -}}
+        <li>
+            <a href="{{ .RelPermalink }}">
+                {{- .Lang -}}
+            </a>
+        </li>
+    {{- end -}}
+{{- end -}}

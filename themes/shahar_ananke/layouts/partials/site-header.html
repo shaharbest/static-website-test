@@ -1,0 +1,13 @@
+<header>
+  <div class="top-content">
+    <h1 class="site-title">
+      {{- .Title | default .Site.Title -}}
+    </h1>
+
+    {{- with .Params.description -}}
+      <h2 class="site-description">
+        {{ . }}
+      </h2>
+    {{- end -}}
+  </div>
+</header>
